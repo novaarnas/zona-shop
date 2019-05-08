@@ -1099,17 +1099,6 @@ position:absolute;
  //]]>
  </script>
 </b:if>
-
-<script src=”https://rawcdn.githack.com/novaarnas/zona-shop/ca180d31c6bed18106245c668098e9bb03d721c4/jquery-cookie.js” type=”text/javascript”>
-<script src=’https://rawcdn.githack.com/novaarnas/zona-shop/ca180d31c6bed18106245c668098e9bb03d721c4/simpleCart.js’ type=’text/javascript’/>
-<script type=’text/javascript’>
-//<![CDATA[
-simpleCart.email = ‘novaarnas2@gmail.com‘;
-simpleCart.checkoutTo = PayPal;
-simpleCart.currency = USD;
-simpleCart.cartHeaders = [‘name’,’thumb_image’,’Quantity_input’,’increment’, ‘decrement’,’Total’];
-//]]>
-</script>
   </head>
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
@@ -1215,8 +1204,8 @@ head.appendChild(script);
     <div class='shop_container'>
 
   <div class='top_cont'>
-    	<div class='welcome_msg'>Welcome to <a href='http://shoppaholictemplate.blogspot.com/'><strong>Shoppaholic Boutique</strong></a></div>
-        <div class='link_top'><a href='#'>About us</a> | <a href='#'>Contact</a> | <a href='#'>Privacy policy</a></div>
+    	<div class='welcome_msg'>Selamat Datang Di <a href='https://zonashopku.blogspot.com/'><strong>Zona Shop</strong></a></div>
+        <div class='link_top'><a href='#'>About us</a> | <a href='#'>Contact</a> | <a href='#'>policy</a></div>
    </div>
 
 	<div class='header_cont'>
@@ -1225,8 +1214,8 @@ head.appendChild(script);
             </div>
              <div class='call'>
                <div id='phone_ico'/>
-           	    <div id='phone_number'>Call Us : ( +62 ) 839 654 62666<br/>
-           	    <em><span style='font-size:11px; font-weight:normal;'>Senin - Sabtu : 10.00 - 22.00</span></em>
+           	    <div id='phone_number'>WA : +62822-3589-9561<br/>
+           	    <em><span style='font-size:11px; font-weight:normal;'>Senin - Sabtu : 09.00 - 22.00</span></em>
                 </div>
              </div>
         </div>
@@ -1235,12 +1224,11 @@ head.appendChild(script);
         
       <div class='navi_cont'>
     	<ul>
- 		    <li><a href='http://shoppaholic-boutique.blogspot.com/'>Home</a></li>
-      	 	<li><a href='http://shoppaholic-boutique.blogspot.com/search/label/produk'>Products</a></li>
+ 		    <li><a href='https://zonashopku.blogspot.com/'>Home</a></li>
+      	 	<li><a href='#'>Produk</a></li>
             <li><a href='#'>Reseller</a></li>
-            <li><a href='#'>How To Shop</a></li>
-            <li><a href='http://shoppaholic-boutique.blogspot.com/p/bagi-anda-yang-ingin-menggunakan_19.html'>Contact Puzzle Inc.</a></li>
-            <li><a href='http://shoppaholic-boutique.blogspot.com/p/template-blogger-gratis-rasanya-sudah.html'>Download Template</a></li>
+            <li><a href='#'>Cara Order</a></li>
+            <li><a href='#'>Hubungi Kami</a></li>
         </ul>
     </div>
     
