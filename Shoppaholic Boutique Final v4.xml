@@ -1099,6 +1099,10 @@ position:absolute;
  //]]>
  </script>
 </b:if>
+
+<link rel="stylesheet" href="https://rawcdn.githack.com/novaarnas/zona-shop/c2ddfd1e9b956f8ea4d2149585a09cc3852b0121/style.css" media="screen" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://rawcdn.githack.com/novaarnas/zona-shop/c2ddfd1e9b956f8ea4d2149585a09cc3852b0121/jquery.shop.js"></script>
     
   </head>
 
