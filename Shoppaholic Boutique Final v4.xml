@@ -1100,7 +1100,7 @@ position:absolute;
  </script>
 </b:if>
 
-<script src=”https://rawcdn.githack.com/novaarnas/zona-shop/ca180d31c6bed18106245c668098e9bb03d721c4/jquery-cookie.js” type=”text/javascript”>// <![CDATA[
+<script src=”https://rawcdn.githack.com/novaarnas/zona-shop/ca180d31c6bed18106245c668098e9bb03d721c4/jquery-cookie.js” type=”text/javascript”>
 <script src=’https://rawcdn.githack.com/novaarnas/zona-shop/ca180d31c6bed18106245c668098e9bb03d721c4/simpleCart.js’ type=’text/javascript’/>
 <script type=’text/javascript’>
 //<![CDATA[
