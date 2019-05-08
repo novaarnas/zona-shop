@@ -26,6 +26,258 @@
 <meta content='KEYWORD, KEYWORD, KEYWORD, KEYWORD, KEYWORD, KEYWORD' name='keywords'/>
 </b:if>
 
+
+/* Simple Cart 
+----------------------------------------------- */
+
+#add-to-cart-widget {   
+    border: 0px solid blue;
+    border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+    float: left;
+    margin: 0 0 18px;
+    padding: 10px;
+    width: 205px;
+padding-bottom:1px;
+}
+
+#add-to-cart-widget h2 {
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.item_name{}
+
+.item_Description{
+}
+
+.hidden_value {display:none;}
+
+.item_thumb {
+    padding: 10px;
+}
+
+.item_price{
+	display: block;
+background-color: #32904D;
+        width: 115px;
+        height: 12px;
+        position: absolute;
+        bottom: 0px;
+        padding:5px 10px;
+        left:15px;
+        color:yellow;
+        font:bold 13px "Helvetica", Arial, sans-serif;
+        text-align:center;
+   border: 0 none;
+}
+
+.simpleCart_items {
+    border: 1px dashed blue;
+background-color: #e0e0e0;
+    font-size: 80%;
+    min-height: 20px;
+    padding: 10px;
+    display: block;
+    margin-left: 0 auto 10px;
+    overflow:hidden;
+}
+
+.simpleCart_items img {
+        padding: 2px;
+		border-radius: 5px;
+       -moz-border-radius: 5px;
+       -webkit-border-radius: 5px;
+        border: 1px solid #D9D9D9;
+        text-align: left;
+        width:40px !important;
+        height:40px !important;
+}
+
+.cartHeaders{
+        display:none;
+}
+
+.itemContainer{
+	float:left;
+	width:175px;
+        text-align:center;
+	display: block;
+	position:relative;
+	bottom:0;
+}
+
+.itemname{
+	font:bold 11px "Helvetica", Arial, sans-serif;
+	color:#000;
+	text-transform:uppercase;
+}
+
+.itemthumb{
+   float: left;
+    margin: 0;
+    width: 58px;
+}
+
+.itemQuantity{
+    float: left;
+    margin: 6px 0;
+    width: 35px;
+}
+
+.itemQuantity input{
+	    border: medium none;
+    color: #000000;
+    float: left;
+    font: bold 11px Arial,sans-serif;
+    height: 22px;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+    width: 25px;
+}
+
+.itemQuantity input:focus{
+	outline:none;
+}
+
+.itemremove a {
+    color: blue;
+    float: left;
+    font-weight: bold;
+    margin: 12px 0 0 10px;
+}
+
+.itemTotal{
+   color: #000000;
+    float: left;
+    font: bold 11px Arial,sans-serif;
+    margin: 15px 0 0 10px;
+    padding: 0;
+    text-align: right;
+    width: 55px;
+}
+
+#cartTotal {
+        font-style: normal; 
+        font-size:13px; 
+        text-align:center;
+        font-weight:bold;
+        margin: 10px 0;
+}
+#cartTotal .simpleCart_total {
+        font-weight:normal;
+}
+a.simpleCart_empty{
+    background: none repeat scroll 0 0 #32904D;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    color: black;
+    display: block;
+    font-size: 11px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+    float: left;
+    width: 90px;
+    margin: 0 15px 0 0;
+}
+
+a.simpleCart_empty:hover {
+ background:#333;
+ color:white;
+}
+
+.cartbuttons {
+margin: 10px 0 0 0;
+}
+
+a.simpleCart_checkout {
+    background: none repeat scroll 0 0 #32904D;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    color: black;
+    display: block;
+    font-size: 11px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+    float: left;
+    width: 90px;
+}
+
+a.simpleCart_checkout:hover {
+ background:#333;
+ color:white;
+}
+
+.btemail
+{
+background-color:#fff;
+border:1px solid #000;
+border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+padding:2px 10px;
+font-size:11px;
+font-weight:bold;
+margin: 1px 30px 5px 47px;
+text-align:center;
+}
+
+a.item_add{
+    bottom: 7px;
+    color: #000000;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    width: 130px;
+} 
+
+input.item_add{
+    left: 15px;
+    bottom: 22px;
+color: blue;
+    font-size: 12px;
+font-weight: bold;
+    position: absolute;
+    right: 15px;
+    width: 135px;
+} 
+
+#checkout{
+	background: #D9D9D9;
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+	font-size: 80%;
+	display: block;
+	text-align: center;
+	-moz-border-radius: 5px; /* firefox rounded corner top left */
+	border-radius: 5px; /* firefox rounded corner top left */
+	-webkit-border-radius: 5px; /* Safari 3 rounded corner top left */
+}
+
+#checkout:hover{
+	background: #333333;
+	color: white;
+}
+
+#breadcrumbs {
+padding:5px 5px 5px 0px;
+margin: 0px 0px 15px 0px;
+font-size:11px;
+line-height: 1.4em;
+border-bottom:3px double #333;
+}
     <b:skin><![CDATA[/*
 -----------------------------------------------
 Shoppaholic Boutique Blogger Template
