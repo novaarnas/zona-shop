@@ -29,10 +29,10 @@
 			this.$paypalForm = this.$element.find( "#paypal-form" ); // PayPal form
 			
 			
-			this.currency = "Rupiah;"; // HTML entity of the currency to be displayed in the layout
-			this.currencyString = "Rp."; // Currency symbol as textual string
-			this.paypalCurrency = "IDR"; // PayPal's currency code
-			this.paypalBusinessEmail = "novaarnas2@gmail.com"; // Your Business PayPal's account email address
+			this.currency = "&euro;"; // HTML entity of the currency to be displayed in the layout
+			this.currencyString = "€"; // Currency symbol as textual string
+			this.paypalCurrency = "EUR"; // PayPal's currency code
+			this.paypalBusinessEmail = "zonashop@email.com"; // Your Business PayPal's account email address
 			this.paypalURL = "https://www.sandbox.paypal.com/cgi-bin/webscr"; // The URL of the PayPal's form
 			
 			// Object containing patterns for form validation
