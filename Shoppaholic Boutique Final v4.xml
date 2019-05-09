@@ -1351,6 +1351,11 @@ border-bottom:3px double #333;
  //]]>
  </script>
 </b:if>
+
+<link rel="stylesheet" href="https://rawcdn.githack.com/novaarnas/zona-shop/6510990df5adf0a1829bcbe7211081c239b7545e/style.css" media="screen" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://rawcdn.githack.com/novaarnas/zona-shop/6510990df5adf0a1829bcbe7211081c239b7545e/jquery.shop.js"></script>
+
   </head>
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
