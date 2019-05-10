@@ -1352,10 +1352,59 @@ border-bottom:3px double #333;
  </script>
 </b:if>
 
-<link rel="stylesheet" href="https://rawcdn.githack.com/novaarnas/zona-shop/6510990df5adf0a1829bcbe7211081c239b7545e/style.css" media="screen" type="text/css" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script type="text/javascript" src="https://rawcdn.githack.com/novaarnas/zona-shop/6510990df5adf0a1829bcbe7211081c239b7545e/jquery.shop.js"></script>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/novaarnas/uji/c46c35279ae1d76b523dc3e78501780d6ba91e6c/qunit.css" type="text/css" media="screen">  
 
+	<script>/*<![CDATA[*/!window.QUnit && document.write('<script src="https://rawcdn.githack.com/novaarnas/uji/c46c35279ae1d76b523dc3e78501780d6ba91e6c/qunit.js"><\/script>')/*]]>*/</script>
+	<script src="http://swarm.simplecartjs.com/js/inject.js"></script>
+	
+    <!-- Your project file goes here -->  
+	<script>/*<![CDATA[*/
+	
+	if( QUnit.urlParams.lib && QUnit.urlParams.ver ){
+		document.write('<script src="https://ajax.googleapis.com/ajax/libs/'+ 
+					QUnit.urlParams.lib + '/' + 
+					QUnit.urlParams.ver + '/' + 
+					QUnit.urlParams.lib + '.js"><\/script>');
+	} else {
+		document.write('<script src="https://rawcdn.githack.com/novaarnas/uji/c46c35279ae1d76b523dc3e78501780d6ba91e6c/jquery.1.6.1.min.js"><\/script>');
+	}
+	
+	if( QUnit.urlParams.commit ){
+		document.write('<script src="https://rawcdn.githack.com/novaarnas/uji/c46c35279ae1d76b523dc3e78501780d6ba91e6c/get-raw-javascript.php?file=https://raw.github.com/wojodesign/simplecart-js/'+ QUnit.urlParams.commit +'https://rawcdn.githack.com/novaarnas/uji/c46c35279ae1d76b523dc3e78501780d6ba91e6c/simpleCart.js"><\/script>');
+		document.write('<script src="https://rawcdn.githack.com/novaarnas/uji/c46c35279ae1d76b523dc3e78501780d6ba91e6c/get-raw-javascript.php?file=https://raw.github.com/wojodesign/simplecart-js/'+ QUnit.urlParams.commit +'https://rawcdn.githack.com/novaarnas/uji/c46c35279ae1d76b523dc3e78501780d6ba91e6c/test.core.js"><\/script>');
+	} else {
+		document.write('<script src="https://rawcdn.githack.com/novaarnas/uji/c46c35279ae1d76b523dc3e78501780d6ba91e6c/simpleCart.js"><\/script>');
+		document.write('<script type="text/javascript" src="https://rawcdn.githack.com/novaarnas/uji/7a4d46ff1a40aca866114619c88814ba113e4f6b/test.core.js"><\/script>');
+	}
+	/*]]>*/</script>
+
+	<style >
+
+	 	.itemContainer{
+			width:100%;
+			float:left;
+		}
+
+		.itemContainer div{
+			float:left;
+			margin: 5px 20px 5px 20px ;
+		}
+
+		.itemContainer a{
+			text-decoration:none;
+		}
+
+		.cartHeaders{
+			width:100%;
+			float:left;
+		}
+
+		.cartHeaders div{
+			float:left;
+			margin: 5px 20px 5px 20px ;
+		}
+
+	</style>
   </head>
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
