@@ -680,7 +680,7 @@ return d};a.addEventToArray=function(a,b,c){var d,e;for(var f=0,g=a.length;f<g;f
 if(a.events[b]===true){c.apply(a)}else if(typeof a.events[b]!=="undefined"){a.events[b].push(c)}else{a.events[b]=[c]}
 return a};a.trigger=function(b,c){var d=true;if(typeof a.events[b]!=="undefined"&&typeof a.events[b][0]==="function"){for(var e=0,f=a.events[b].length;e<f;e++){d=a.events[b][e].apply(a,c?c:[])}}
 if(d===false){return false}else{return true}};a.ready=function(b){if(!b){a.trigger("ready");a.events["ready"]=true}else{a.bind("ready",b)}
-return a};a.currencySymbol=function(){switch(a.currency){case CHF:return"CHF ";case CZK:return"CZK ";case DKK:return"DKK ";case HUF:return"HUF ";case NOK:return"NOK ";case PLN:return"PLN ";case SEK:return"SEK ";case JPY:return"¥";case EUR:return"€";case GBP:return"£";case CHF:return"CHF ";case IDR:return"Rp ";case USD:case CAD:case AUD:case NZD:case HKD:case SGD:return"Rp";default:return""}};a.currencyStringForPaypalCheckout=function(b){if(a.currencySymbol()=="&#36;"){return"$"+ parseFloat(b).toFixed(2)}else{return""+ parseFloat(b).toFixed(2)}};a.valueToCurrencyString=function(b){var c=parseFloat(b);if(isNaN(c))c=0;return c.toCurrency(a.currencySymbol())};a.valueToPercentageString=function(a){return parseFloat(100*a)+"%"};a.valueToImageString=function(a){if(a.match(/<\s*img.*src\=/)){return a}else{return'<img src="'+ a+'" />'}};a.valueToTextInput=function(a,b){return'<input type="text" value="'+ a+'" '+ b+" />"};a.valueToLink=function(a,b,c){return'<a href="'+ b+'" '+ c+" >"+ a+"</a>"};a.valueToElement=function(a,b,c){return"<"+ a+" "+ c+" > "+ b+"</"+ a+">"};a.hasItem=function(b){var c,d,e,f=false;a.each(function(c){d=true;a.each(b,function(a,e,f){if(f!=="quantity"&&f!=="id"&&b[f]!==c[f]){d=false}});if(d){f=c}});return f};a.ln={en_us:{quantity:"Quantity",price:"Price",total:"Total",decrement:"Decrement",increment:"Increment",remove:"Remove",tax:"Tax",shipping:"Shipping",image:"Image"}};a.language="en_us";a.print=function(a){var b=this;return b.ln[b.language]&&b.ln[b.language][a.toLowerCase()]?b.ln[b.language][a.toLowerCase()]:a};a.update=function(){if(!simpleCart.isLoaded){simpleCart.load()}
+return a};a.currencySymbol=function(){switch(a.currency){case CHF:return"CHF ";case CZK:return"CZK ";case DKK:return"DKK ";case HUF:return"HUF ";case NOK:return"NOK ";case PLN:return"PLN ";case SEK:return"SEK ";case JPY:return"Â¥";case EUR:return"Â€";case GBP:return"Â£";case CHF:return"CHF ";case IDR:return"Rp ";case USD:case CAD:case AUD:case NZD:case HKD:case SGD:return"Rp";default:return""}};a.currencyStringForPaypalCheckout=function(b){if(a.currencySymbol()=="&#36;"){return"$"+ parseFloat(b).toFixed(2)}else{return""+ parseFloat(b).toFixed(2)}};a.valueToCurrencyString=function(b){var c=parseFloat(b);if(isNaN(c))c=0;return c.toCurrency(a.currencySymbol())};a.valueToPercentageString=function(a){return parseFloat(100*a)+"%"};a.valueToImageString=function(a){if(a.match(/<\s*img.*src\=/)){return a}else{return'<img src="'+ a+'" />'}};a.valueToTextInput=function(a,b){return'<input type="text" value="'+ a+'" '+ b+" />"};a.valueToLink=function(a,b,c){return'<a href="'+ b+'" '+ c+" >"+ a+"</a>"};a.valueToElement=function(a,b,c){return"<"+ a+" "+ c+" > "+ b+"</"+ a+">"};a.hasItem=function(b){var c,d,e,f=false;a.each(function(c){d=true;a.each(b,function(a,e,f){if(f!=="quantity"&&f!=="id"&&b[f]!==c[f]){d=false}});if(d){f=c}});return f};a.ln={en_us:{quantity:"Quantity",price:"Price",total:"Total",decrement:"Decrement",increment:"Increment",remove:"Remove",tax:"Tax",shipping:"Shipping",image:"Image"}};a.language="en_us";a.print=function(a){var b=this;return b.ln[b.language]&&b.ln[b.language][a.toLowerCase()]?b.ln[b.language][a.toLowerCase()]:a};a.update=function(){if(!simpleCart.isLoaded){simpleCart.load()}
 if(!simpleCart.pageIsReady){simpleCart.initializeView()}
 a.updateTotals();a.updateView();a.save()};a.updateTotals=function(){a.total=0;a.quantity=0;a.each(function(b){if(b.quantity<1){b.remove()}else if(b.quantity!==null&&b.quantity!=="undefined"){a.quantity=parseInt(a.quantity,10)+ parseInt(b.quantity,10)}
 if(b.price){a.total=parseFloat(a.total)+ parseInt(b.quantity,10)*parseFloat(b.price)}});a.shippingCost=a.shipping();a.taxCost=parseFloat(a.total)*a.taxRate;a.finalTotal=a.shippingCost+ a.taxCost+ a.total};a.shipping=function(){if(parseInt(a.quantity,10)===0)return 0;var b=parseFloat(a.shippingFlatRate)+ parseFloat(a.shippingTotalRate)*parseFloat(a.total)+ parseFloat(a.shippingQuantityRate)*parseInt(a.quantity,10),c;a.each(function(a){if(a.shipping){if(typeof a.shipping=="function"){b+=parseFloat(a.shipping())}else{b+=parseFloat(a.shipping)}}});return b};a.initialize=function(){a.initializeView();a.load();a.update();a.ready()}}
@@ -710,20 +710,20 @@ return b.reverse()};Number.prototype.toCurrency=function(){return(arguments[0]?a
 //]]>
 </script>
 <script type='text/javascript'>
-simpleCart.email = &#39;ncmajid@gmail.com&#39;;
+simpleCart.email = &#39; zonashopku@gmail.com&#39;;
 simpleCart.checkoutTo = Email;
 simpleCart.currency = IDR;
-simpleCart.urlWebsite = &#39;http://johnysip-deh.blogspot.com&#39;;
-simpleCart.taxRate  = 0.02;
-simpleCart.shippingFlatRate = 3.25;
-simpleCart.shippingQuantityRate = 1.00;
-simpleCart.alamatPemilik = &#39;Alamat Anda &#39;;
-simpleCart.noHP = &#39;081 xxxx xxxx&#39;;
-simpleCart.urlFacebook = &#39;http://www.facebook.com/pages/your facebook&#39;;
-simpleCart.urlTwitter = &#39;https://twitter.com/your twitter&#39;;
-simpleCart.akunbank1 = &#39;Bank A&#39;;
-simpleCart.norek1 = &#39;No Rekening&#39;;
-simpleCart.namarek1 = &#39;Nama Pemilik Rekening Bank A&#39;;
+simpleCart.urlWebsite = &#39;https://zonashopku.blogspot.com&#39;;
+simpleCart.taxRate  = 0;
+simpleCart.shippingFlatRate = 0;
+simpleCart.shippingQuantityRate = 0;
+simpleCart.alamatPemilik = &#39;Demak, Jawa Tengah &#39;;
+simpleCart.noHP = &#39;0822 3589 9561&#39;;
+simpleCart.urlFacebook = &#39;-&#39;;
+simpleCart.urlTwitter = &#39;-&#39;;
+simpleCart.akunbank1 = &#39;Bank BRI&#39;;
+simpleCart.norek1 = &#39;588501011360531&#39;;
+simpleCart.namarek1 = &#39;Nova Arnas&#39;;
 simpleCart.akunbank2 = &#39;Bank B&#39;;
 simpleCart.norek2 = &#39;No Rekening&#39;;
 simpleCart.namarek2 = &#39;Nama Pemilik Rekening Bank B&#39;;
@@ -740,10 +740,10 @@ simpleCart.akunbank6 = &#39;Bank F&#39;;
 simpleCart.norek6 = &#39;No Rekening&#39;;
 simpleCart.namarek6 = &#39;Nama Pemilik Rekening Bank D&#39;;
 simpleCart.urlReferrer = &#39;http://www.maskolis.com&#39;;
-simpleCart.businessName = &#39;Nama Toko Online Anda&#39;;
+simpleCart.businessName = &#39; ZONA SHOP&#39;;
 simpleCart.formatsmsKonfirmasi= &#39;(Nama, Email, Jumlah transfer, Bank Tujuan Transfer, Tanggal transfer)&#39;;
-simpleCart.contohformatsmsKonfirmasi= &#39;Maskolis, email.maskolis@gmail.com, Rp 1.500.000, BCA, 12 Desember 2012 &#39;;
-simpleCart.catatanTambahanInvoice= &#39;(Have a nice day for you and I hope you enjoy it)&#39;;
+simpleCart.contohformatsmsKonfirmasi= &#39;Dinda, email.email-anda@gmail.com, Rp 1.500.000, BRI, 12 Desember 2012 &#39;;
+simpleCart.catatanTambahanInvoice= &#39;(Semoga hari Anda menyenangkan dan saya harap Anda menikmatinya)&#39;;
 simpleCart.cartHeaders = [&quot;Name&quot;, &quot;thumb_image&quot; , &quot;Quantity_input&quot; ,   &quot;Total&quot;, &quot;remove&quot; ];
 </script>
 
@@ -1957,7 +1957,7 @@ printRelatedLabels_thumbs(&quot;<data:post.url/>&quot;);
   </b:if> 
   </div>
   <div class='cm_reply'>
-  <a expr:href='&quot;https://www.blogger.com/comment.g?blogID=4486072018930286729&amp;postID=&quot; + data:post.id + &quot;&amp;isPopup=true&amp;postBody=%40%3C%61%20%68%72%65%66%3D%22%23&quot; + data:comment.anchorName + &quot;%22%3E&quot; + data:comment.author + &quot;%3C%2F%61%3E#form&quot;' onclick='javascript:window.open(this.href, &quot;bloggerPopup&quot;, &quot;toolbar=0,location=0,statusbar=1,menubar=0,scrollbars=yes,width=600,height=500&quot;); return false;'>Reply</a>
+  <a expr:href='&quot;https://www.blogger.com/comment.g?blogID=3419179901663082864&amp;postID=&quot; + data:post.id + &quot;&amp;isPopup=true&amp;postBody=%40%3C%61%20%68%72%65%66%3D%22%23&quot; + data:comment.anchorName + &quot;%22%3E&quot; + data:comment.author + &quot;%3C%2F%61%3E#form&quot;' onclick='javascript:window.open(this.href, &quot;bloggerPopup&quot;, &quot;toolbar=0,location=0,statusbar=1,menubar=0,scrollbars=yes,width=600,height=500&quot;); return false;'>Reply</a>
   </div>
   </div>
   <b:if cond='data:comment.author == data:post.author'>
